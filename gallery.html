@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Янган Тау - Галерея</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <div class="logo">
+        <img src="https://yantau.ru/upload/resize_cache/webp/local/templates/yantau/img/top-2.webp" alt="Янган Тау">
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="booking.html">Путевки и программы</a></li>
+        <li><a href="gallery.html" class="active">Галерея</a></li>
+        <li><a href="index.html#contacts">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="section">
+    <div class="container">
+        <h2 class="section-title">Галерея</h2>
+        
+        <div class="gallery-filters">
+          <button class="filter-btn active" data-filter="all">Все</button>
+          <button class="filter-btn" data-filter="nature">Природа</button>
+          <button class="filter-btn" data-filter="rooms">Номера</button>
+          <button class="filter-btn" data-filter="treatment">Лечение</button>
+          <button class="filter-btn" data-filter="food">Питание</button>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item" data-category="nature">
+                <img src="img/горы.webp">
+            </div>
+            <div class="gallery-item" data-category="rooms">
+              <img src="img/ном1.jfif">
+            </div>
+            <div class="gallery-item" data-category="rooms">
+              <img src="img/ном2.jfif">
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="img/зима.jpg">
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="img/коргазак.jpg">
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="img/орел.webp">
+            </div>
+            <div class="gallery-item" data-category="treatment">
+              <img src="img/бассейн.jfif">
+            </div>
+            <div class="gallery-item" data-category="nature">
+            <img src="img/вид.jfif">
+          </div>
+          <div class="gallery-item" data-category="food">
+          <img src="img/еда.jfif">
+        </div>
+        <div class="gallery-item" data-category="rooms">
+          <img src="img/ном6.jfif">
+        </div>
+        <div class="gallery-item" data-category="food">
+          <img src="img/пит1.jfif">
+        </div>
+        <div class="gallery-item" data-category="food">
+          <img src="img/пит2.jfif">
+        </div>
+        <div class="gallery-item" data-category="rooms">
+          <img src="img/ном5.jfif">
+        </div>
+        <div class="gallery-item" data-category="treatment">
+          <img src="img/женщ.webp">
+      </div>
+      <div class="gallery-item" data-category="treatment">
+        <img src="img/ле.jfif">
+    </div>
+    <div class="gallery-item" data-category="nature">
+      <img src="img/скала.jfif">
+  </div>
+  <div class="gallery-item" data-category="treatment">
+    <img src="img/лечение.webp">
+</div>
+<div class="gallery-item" data-category="rooms">
+  <img src="img/ном4.jfif">
+</div>
+<div class="gallery-item" data-category="food">
+  <img src="img/пит3.jfif">
+</div>
+<div class="gallery-item" data-category="food">
+  <img src="img/пит4.jfif">
+</div>
+<div class="gallery-item" data-category="rooms">
+  <img src="img/номер.jfif">
+</div>
+<div class="gallery-item" data-category="nature">
+  <img src="img/плита.jfif">
+</div>
+<div class="gallery-item" data-category="nature">
+  <img src="img/сп.jfif">
+</div>
+<div class="gallery-item" data-category="nature">
+  <img src="img/улица.jfif">
+</div>
+<div class="gallery-item" data-category="nature">
+  <img src="img/сплав.jfif">
+</div>
+<div class="gallery-item" data-category="nature">
+  <img src="img/юрта.webp">
+</div>
+<div class="gallery-item" data-category="rooms">
+  <img src="img/ном3.jfif">
+</div>
+<div class="gallery-item" data-category="nature">
+  <img src="img/янган.jfif">
+</div>
+        </div>
+    </div>
+</section>
+
+  <div class="lightbox" id="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img src="" alt="" class="lightbox-image">
+    <div class="lightbox-caption"></div>
+  </div>
+
+  <footer>
+    <div class="container footer-grid">
+      <img src="https://yantau.ru/local/templates/yantau/img/logo_color.svg" alt="Янган Тау" height="50">
+      <div class="footer-links">
+        <a href="index.html">Главная</a>
+        <a href="booking.html">Путевки</a>
+        <a href="booking.html">Программы</a>
+        <a href="gallery.html">Галерея</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Янган Тау. Все права не защищены.</p>
+    </div>
+  </footer>
+
+  <button class="btn-top" id="btnTop">↑ Наверх</button>
+  <script src="js/script.js"></script>
+</body>
+</html>

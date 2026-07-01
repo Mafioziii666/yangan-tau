@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Янган Тау - Путевки и лечебные программы</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <div class="logo">
+        <img src="https://yantau.ru/upload/resize_cache/webp/local/templates/yantau/img/top-2.webp" alt="Янган Тау">
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="booking.html" class="active">Путевки и программы</a></li>
+        <li><a href="gallery.html">Галерея</a></li>
+        <li><a href="index.html#contacts">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Выберите путевку и лечебную программу</h2>
+      
+      <h3 class="subsection-title">Путевки и цены</h3>
+      <div class="prices-table">
+        <div class="price-card">
+          <h3>Эконом</h3>
+          <p class="price">от 2 500 руб / сутки</p>
+          <ul>
+            <li>Комфортабельный номер</li>
+            <li>Питание по запросу</li>
+            <li>Доступ к бювету</li>
+          </ul>
+          <button class="btn-price select-package" data-package="Эконом">Выбрать</button>
+        </div>
+        <div class="price-card">
+          <h3>Стандарт</h3>
+          <p class="price">от 4 200 руб / сутки</p>
+          <ul>
+            <li>Номер с видом на горы</li>
+            <li>Завтрак включен</li>
+            <li>SPA-зона</li>
+          </ul>
+          <button class="btn-price select-package" data-package="Стандарт">Выбрать</button>
+        </div>
+        <div class="price-card">
+          <h3>Люкс</h3>
+          <p class="price">от 6 800 руб / сутки</p>
+          <ul>
+            <li>Просторный номер</li>
+            <li>Все включено</li>
+            <li>Индивидуальные программы</li>
+          </ul>
+          <button class="btn-price select-package" data-package="Люкс">Выбрать</button>
+        </div>
+        <div class="price-card">
+          <h3>Семейный</h3>
+          <p class="price">от 5 500 руб / сутки</p>
+          <ul>
+            <li>Две комнаты</li>
+            <li>Детское питание</li>
+            <li>Анимация</li>
+          </ul>
+          <button class="btn-price select-package" data-package="Семейный">Выбрать</button>
+        </div>
+      </div>
+
+      <h3 class="subsection-title">Лечебные программы</h3>
+      <div class="programs-grid">
+        <div class="program-card">
+          <h3>Грязевые ванны</h3>
+          <p>Уникальные грязи Янгантау с высоким содержанием минералов. Процедура улучшает кровообращение, снимает воспаления, рекомендована при заболеваниях опорно-двигательного аппарата.</p>
+          <button class="btn-program select-program" data-program="Грязевые ванны">Добавить</button>
+        </div>
+        <div class="program-card">
+          <h3>Кумысолечение</h3>
+          <p>Напиток из кобыльего молока с целебными свойствами. Укрепляет иммунитет, нормализует пищеварение, тонизирует организм. Курс от 7 дней.</p>
+          <button class="btn-program select-program" data-program="Кумысолечение">Добавить</button>
+        </div>
+        <div class="program-card">
+          <h3>Бювет с водой</h3>
+          <p>Природная минеральная вода из скважин курорта. Помогает при заболеваниях ЖКТ, выводит токсины, насыщает организм микроэлементами.</p>
+          <button class="btn-program select-program" data-program="Бювет с водой">Добавить</button>
+        </div>
+      </div>
+
+      <div class="selected-options" id="selectedOptions" style="display: none;">
+        <button class="btn-submit" id="proceedToBooking">Перейти к бронированию</button>
+      </div>
+      
+      <div class="booking-form-wrapper" id="bookingFormWrapper" style="display: none;">
+        <h3 class="subsection-title">Забронировать путевку</h3>
+        <form class="booking-form">
+          <div class="form-group">
+            <label>ФИО</label>
+            <input type="text" placeholder="Ваши фамилия имя отчество" required>
+          </div>
+          <div class="form-group">
+            <label>Телефон</label>
+            <input type="tel" placeholder="+7 (___) ___-__-__" required>
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="mail@gmail.com">
+          </div>
+          <div class="form-group">
+            <label>Дата заезда</label>
+            <input type="date">
+          </div>
+          <div class="form-group">
+            <label>Количество гостей</label>
+            <input type="number" min="1" value="2">
+          </div>
+          <button type="submit" class="btn-submit">Отправить заявку</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-grid">
+      <img src="https://yantau.ru/local/templates/yantau/img/logo_color.svg" alt="Янган Тау" height="50">
+      <div class="footer-links">
+        <a href="index.html">Главная</a>
+        <a href="booking.html">Путевки</a>
+        <a href="booking.html">Программы</a>
+        <a href="gallery.html">Галерея</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Янган Тау. Все права не защищены.</p>
+    </div>
+  </footer>
+
+  <button class="btn-top" id="btnTop">↑ Наверх</button>
+  <script src="js/script.js"></script>
+</body>
+</html>
